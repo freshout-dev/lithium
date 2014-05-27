@@ -11,7 +11,7 @@ Lithium depends on a patched version of neon, (provided on this repo).
 ```js
 <script src="./neon.js"></script>
 <script src="./neon.li_patch.js"></script>
-<script src="./lithium.js></script>
+<script src="./lithium.js"></script>
 
 // place other neon based files here."
 ```
