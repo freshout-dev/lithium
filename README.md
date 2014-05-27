@@ -8,7 +8,7 @@ It monitors the code at the execution level, so it can be used on live code to d
 
 Lithium depends on a patched version of neon, (provided on this repo).
 
-```js
+```html
 <script src="./neon.js"></script>
 <script src="./neon.li_patch.js"></script>
 <script src="./lithium.js"></script>
@@ -73,7 +73,7 @@ Li.Engine.error.push(function (data) {
         ' with message  ',
         data.error.message
     ];
-    console.error(errorDatai.join(' '));
+    console.error(errorData.join(' '));
     console.error(data.error.stack);
 });
 ```
