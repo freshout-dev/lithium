@@ -22,7 +22,10 @@ performance.now = (function() {
          performance.msNow     ||
          performance.oNow      ||
          performance.webkitNow ||
-         function() { return new Date().getTime(); };
+         function() {
+            var hrTime = process.hrtime();
+            return (hrTime[0] + (hrTime[1] / 1000000));
+         };
 })();
 
 Li = {
